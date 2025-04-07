@@ -51,7 +51,9 @@ main {
     border-radius: 8px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #222;
 }
 
@@ -62,11 +64,14 @@ table {
     margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
 }
@@ -91,3 +96,5 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+
