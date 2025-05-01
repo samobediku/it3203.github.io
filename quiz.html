@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Web Development & Cybersecurity</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="resources.html">Resources</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Self-Assessment Quiz</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic1.html">SEO Basics</a></li>
+        <li><a href="topic2.html">Web Security</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Self-Assessment Quiz</h1>
-        <p>Test your knowledge on SEO, Phishing, and SQL Injection!</p>
+  <main>
+    <form id="quizForm">
+        <section>
+            <h2>1. What does SEO stand for?</h2>
+            <label><input type="radio" name="q1" value="a" /> A. Search Engine Optimization</label><br />
+            <label><input type="radio" name="q1" value="b" /> B. Secure Email Operations</label><br />
+            <label><input type="radio" name="q1" value="c" /> C. Secure Elephant Operations</label><br />
+            <label><input type="radio" name="q1" value="d" /> D. Secure Email Orange</label><br />
+          </section>
 
-        <form id="quiz-form">
-            <!-- Question 1: SEO -->
-            <h2>What does SEO stand for?</h2>
-            <label><input type="radio" name="q1" value="A">  Search Engine Optimization</label><br>
-            <label><input type="radio" name="q1" value="B">  Secure Email Organization</label><br>
-            <label><input type="radio" name="q1" value="C">  Server Execution Operations</label><br>
-            <label><input type="radio" name="q1" value="D">  Search Engine Output</label><br>
+      <section>
+        <h2>2. What is SQL Injection?</h2>
+        <label><input type="radio" name="q2" value="a" /> A. A CSS property</label><br />
+        <label><input type="radio" name="q2" value="b" /> B. A web attack on databases</label><br />
+        <label><input type="radio" name="q2" value="b" /> C. An unwanted code with a virus</label><br />
+        <label><input type="radio" name="q2" value="b" /> D. A Phishing command in a text file</label><br />
 
-            <!-- Question 2: Fill in the Blank -->
-            <h2>________ is a technique used by attackers to steal personal information by impersonating legitimate websites.</h2>
-            <input type="text" name="q2" placeholder="Your answer here"><br>
+      </section>
 
-            <!-- Question 3: SQL Injection -->
-            <h2>Which of the following are examples of SQL Injection vulnerabilities? (Select all that apply)</h2>
-            <label><input type="checkbox" name="q3" value="A">  Using UNION SELECT in a query</label><br>
-            <label><input type="checkbox" name="q3" value="B">  Using strong password hashing</label><br>
-            <label><input type="checkbox" name="q3" value="C">  Manipulating SQL queries to bypass login forms</label><br>
-            <label><input type="checkbox" name="q3" value="D">  Escaping special characters in user inputs</label><br>
+      <section>
+        <h2>3. Select all good SEO practices:</h2>
+        <label><input type="checkbox" name="q3" value="a" /> Using relevant keywords</label><br />
+        <label><input type="checkbox" name="q3" value="b" /> Hiding text</label><br />
+        <label><input type="checkbox" name="q3" value="c" /> Optimized page speed</label><br />
+        <label><input type="checkbox" name="q3" value="c" /> W3schools</label><br />
 
-            <!-- Question 4: Phishing -->
-            <h2>What is phishing?</h2>
-            <label><input type="radio" name="q4" value="A">  A type of encryption algorithm</label><br>
-            <label><input type="radio" name="q4" value="B">  A method of attacking a website using SQL injection</label><br>
-            <label><input type="radio" name="q4" value="C">  A technique used to trick people into revealing personal information by impersonating legitimate sources</label><br>
-            <label><input type="radio" name="q4" value="D">  A way to secure passwords</label><br>
+      </section>
 
-            <button type="button" onclick="submitQuiz()">Submit</button>
-        </form>
+      <section>
+        <h2>4. Fill in the blank: HTTPS helps _____ data between browser and server.</h2>
+        <input type="text" name="q4" placeholder="Type your answer..." />
+      </section>
 
-        <div id="result"></div>
-        <button id="restart-btn" style="display: none;" onclick="restartQuiz()">Restart Quiz</button>
-    </main>
+      <br />
+      <button type="submit">Submit Quiz</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Your Website. All rights reserved.</p>
-    </footer>
-
-    <script src="quiz.js"></script>
+  <footer>
+    <p>&copy; 2025 Web Technology Research. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
-
-
 
