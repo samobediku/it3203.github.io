@@ -193,4 +193,64 @@
       background: #0f3460;
     }
   }
+  /* === Quiz-specific styling (extra fun & visual upgrades) === */
+
+form section {
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+  }
+  
+  form section:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #1a1a2e;
+    transform: scale(1.2);
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  label:hover {
+    color: #0f3460;
+  }
+  
+  button {
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  button:hover {
+    background-color: #1a1a2e;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  } 
+  label::first-letter {
+    font-weight: bold;
+    color: #1a1a2e;
+  }
+  
   
